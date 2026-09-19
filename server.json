@@ -3,13 +3,13 @@
   "name": "tech.thecompound/parserail-mcp",
   "description": "Documents to schema-valid JSON plus 38 more finished-job AI tools, on one credit wallet.",
   "websiteUrl": "https://parserail.thecompound.tech",
-  "version": "0.5.3",
+  "version": "0.5.5",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "parserail-mcp",
-      "version": "0.5.3",
+      "version": "0.5.5",
       "transport": {
         "type": "stdio"
       },

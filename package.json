@@ -1,6 +1,6 @@
 {
   "name": "parserail-mcp",
-  "version": "0.5.3",
+  "version": "0.5.5",
   "description": "MCP server for ParseRail, gives Claude, Cursor, and any MCP client native tools to parse documents, extract fields, redact PII, analyze contracts, fight chargebacks, and enrich companies.",
   "keywords": [
     "kynth",
@@ -49,9 +49,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@kynth/api": "^0.5.2",
     "@modelcontextprotocol/sdk": "^1.12.0",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "parserail-api": "^0.5.3"
   },
   "devDependencies": {
     "@types/node": "^22",

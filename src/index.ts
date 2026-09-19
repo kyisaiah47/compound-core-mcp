@@ -5,7 +5,7 @@
 //   PARSERAIL_API_KEY=ksk_live_... npx parserail-mcp
 //
 // Register it in your MCP client config (stdio transport). Every tool calls the
-// live ParseRail API through the @kynth/api SDK; get a key plus 500 free credits
+// live ParseRail API through the parserail-api SDK; get a key plus 500 free credits
 // every month at https://parserail.thecompound.tech.
 //
 // ⛔ THE GENERATOR THIS FILE NAMED IS GONE, so this file is hand-maintained now
@@ -18,7 +18,9 @@
 // header. Anyone who followed it went looking for a path that does not exist and
 // left this file alone, which is why its identity stayed on the retired brand.
 //
-// The SDK import below is still @kynth/api and the KynthCore / KynthError names
+// The SDK is parserail-api, renamed from the old scoped package on 2026-09-19. That package
+// keeps the previous class names as aliases, so anything importing them still works.
+// The two env fallbacks below are the same courtesy for keys people set by hand.
 // are that package's own exported API surface, so they are not ours to rename here.
 // Renaming the SDK is a separate package with its own installed base.
 
@@ -27,8 +29,8 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import type { ToolAnnotations } from "@modelcontextprotocol/sdk/types.js";
 import { z } from "zod";
 import {
-  KynthCore,
-  KynthError,
+  ParseRailCore,
+  ParseRailError,
   type ParseInput,
   type ExtractInput,
   type ClassifyInput,
@@ -68,7 +70,7 @@ import {
   type MemoryInput,
   type ImageInput,
   type SpeakInput,
-} from "@kynth/api";
+} from "parserail-api";
 
 // PARSERAIL_API_KEY IS THE NAME, AND KYNTH_API_KEY STILL WORKS (2026-09-19). The studio is
 // Compound Labs and this package is parserail-mcp, but the old variable is set by hand in real
@@ -85,21 +87,21 @@ if (!apiKey) {
   process.exit(1);
 }
 
-const parserail = new KynthCore({
+const parserail = new ParseRailCore({
   apiKey,
   baseUrl: process.env.PARSERAIL_BASE_URL || process.env.KYNTH_BASE_URL || undefined,
 });
 
-const server = new McpServer({ name: "parserail-mcp", version: "0.5.3" });
+const server = new McpServer({ name: "parserail-mcp", version: "0.5.5" });
 
-/** Wrap an SDK call so any KynthError becomes a clean MCP tool error. */
+/** Wrap an SDK call so any ParseRailError becomes a clean MCP tool error. */
 async function run<T>(fn: () => Promise<T>) {
   try {
     const result = await fn();
     return { content: [{ type: "text" as const, text: JSON.stringify(result, null, 2) }] };
   } catch (err) {
     const message =
-      err instanceof KynthError
+      err instanceof ParseRailError
         ? `ParseRail error [${err.code}] (HTTP ${err.status}): ${err.message}`
         : err instanceof Error
           ? err.message
@@ -627,4 +629,4 @@ server.registerTool(
 
 const transport = new StdioServerTransport();
 await server.connect(transport);
-console.error("[kynth-mcp] ParseRail MCP server running on stdio.");
+console.error("[parserail-mcp] ParseRail MCP server running on stdio.");
