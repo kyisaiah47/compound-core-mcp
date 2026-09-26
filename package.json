@@ -24,7 +24,7 @@
   "homepage": "https://parserail.thecompound.tech",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kyisaiah47/kynth-core-mcp.git"
+    "url": "https://github.com/kyisaiah47/compound-core-mcp.git"
   },
   "license": "MIT",
   "author": "Compound Labs <hello@thecompound.tech>",
