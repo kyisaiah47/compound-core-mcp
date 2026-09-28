@@ -1,0 +1,7 @@
+{
+ "product": "ParseRail MCP Server",
+ "parent": "ParseRail",
+ "domain": "https://parserail.thecompound.tech",
+ "tagline": "MCP server for ParseRail — Claude, Cursor and any MCP client get native document tools.",
+ "description": "Gives Claude, Cursor, and any MCP client native tools to parse documents, extract fields, redact PII, analyze contracts, fight chargebacks, and enrich companies."
+}
