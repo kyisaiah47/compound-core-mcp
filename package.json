@@ -3,7 +3,6 @@
   "version": "0.5.5",
   "description": "MCP server for ParseRail, gives Claude, Cursor, and any MCP client native tools to parse documents, extract fields, redact PII, analyze contracts, fight chargebacks, and enrich companies.",
   "keywords": [
-    "kynth",
     "mcp",
     "model-context-protocol",
     "ai",
