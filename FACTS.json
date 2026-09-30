@@ -1,0 +1,41 @@
+{
+  "claims": [
+    {
+      "id": "parserail-credit-unit",
+      "claim": "ParseRail credit price",
+      "value": "1 credit = $0.01",
+      "kind": "price",
+      "sourceUrl": "https://parserail.thecompound.tech/docs/credits",
+      "sourceTitle": "ParseRail — Credits & pricing",
+      "asOf": "2026-09-30",
+      "appearsOn": ["README.md", "llms-install.md", "server.json", "src/index.ts"],
+      "lastVerified": "2026-09-30",
+      "status": "verified"
+    },
+    {
+      "id": "parserail-success-only-billing",
+      "claim": "ParseRail charges credits only when a call succeeds",
+      "value": "A failed call costs nothing; async jobs charge only on success",
+      "kind": "billing-policy",
+      "sourceUrl": "https://parserail.thecompound.tech/docs/credits",
+      "sourceTitle": "ParseRail — Credits & pricing",
+      "asOf": "2026-09-30",
+      "appearsOn": ["README.md", "llms-install.md", "server.json", "src/index.ts"],
+      "lastVerified": "2026-09-30",
+      "status": "verified"
+    },
+    {
+      "id": "parserail-free-credits",
+      "claim": "ParseRail free account allowance",
+      "value": "500 free credits monthly, no card required",
+      "kind": "offer",
+      "sourceUrl": "https://parserail.thecompound.tech/",
+      "sourceTitle": "ParseRail — AI back-end for your product",
+      "asOf": "2026-09-30",
+      "appearsOn": ["README.md", "llms-install.md", "server.json", "src/index.ts"],
+      "lastVerified": "2026-09-30",
+      "status": "unverifiable"
+    }
+  ],
+  "asOf": "2026-09-30"
+}
