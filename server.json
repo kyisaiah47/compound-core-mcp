@@ -3,20 +3,20 @@
   "name": "tech.thecompound/parserail-mcp",
   "description": "Documents to schema-valid JSON plus 38 more finished-job AI tools, on one credit wallet.",
   "websiteUrl": "https://parserail.thecompound.tech",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "parserail-mcp",
-      "version": "0.5.5",
+      "version": "0.5.6",
       "transport": {
         "type": "stdio"
       },
       "environmentVariables": [
         {
           "name": "PARSERAIL_API_KEY",
-          "description": "Your ParseRail API key (ksk_live_…). Free at parserail.thecompound.tech/dashboard , 500 credits monthly, no card.",
+          "description": "Your ParseRail API key (ksk_live_…), from parserail.thecompound.tech/dashboard. Calls spend prepaid credits. There is no free tier.",
           "isRequired": true,
           "isSecret": true
         }

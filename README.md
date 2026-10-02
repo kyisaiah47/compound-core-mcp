@@ -4,7 +4,7 @@ An [MCP](https://modelcontextprotocol.io) server for **[ParseRail](https://parse
 
 ## Setup
 
-Get a key (and 500 free credits) at **[parserail.thecompound.tech](https://parserail.thecompound.tech)**, then add the server to your MCP client config.
+Get a key at **[parserail.thecompound.tech](https://parserail.thecompound.tech)**, then add the server to your MCP client config. There is no free tier. Credits are bought up front, a $20 pack or a plan from $19/mo, and a call is charged only when it succeeds.
 
 **Claude Code:**
 

@@ -25,16 +25,16 @@
       "status": "verified"
     },
     {
-      "id": "parserail-free-credits",
-      "claim": "ParseRail free account allowance",
-      "value": "500 free credits monthly, no card required",
+      "id": "parserail-no-free-tier",
+      "claim": "ParseRail has no free tier; credits are bought up front",
+      "value": "No free tier; credits are bought up front, a $20 pack or a plan from $19/mo",
       "kind": "offer",
-      "sourceUrl": "https://parserail.thecompound.tech/",
-      "sourceTitle": "ParseRail — AI back-end for your product",
-      "asOf": "2026-09-30",
+      "sourceUrl": "https://parserail.thecompound.tech/pricing",
+      "sourceTitle": "ParseRail pricing",
+      "asOf": "2026-10-02",
       "appearsOn": ["README.md", "llms-install.md", "server.json", "src/index.ts"],
-      "lastVerified": "2026-09-30",
-      "status": "unverifiable"
+      "lastVerified": "2026-10-02",
+      "status": "verified"
     }
   ],
   "asOf": "2026-09-30"

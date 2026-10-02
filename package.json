@@ -1,6 +1,6 @@
 {
   "name": "parserail-mcp",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "description": "MCP server for ParseRail, gives Claude, Cursor, and any MCP client native tools to parse documents, extract fields, redact PII, analyze contracts, fight chargebacks, and enrich companies.",
   "keywords": [
     "mcp",

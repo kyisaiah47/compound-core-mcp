@@ -4,7 +4,7 @@ ParseRail is a documents-to-JSON + finished-job AI toolkit (39 endpoints: invoic
 
 ## 1. Get an API key
 
-Create a free account at https://parserail.thecompound.tech/dashboard, 500 free credits monthly, no card required. Copy your key (`ksk_live_…`).
+Create an account at https://parserail.thecompound.tech/dashboard and buy credits: a $20 pack or a plan from $19/mo. There is no free tier. Copy your key (`ksk_live_…`).
 
 ## 2. Configure the server
 
@@ -36,5 +36,5 @@ Ask your agent to run the `parse` tool on any PDF/image URL, a valid key returns
 ## Troubleshooting
 
 - `401 unauthorized`: the key is missing/typo'd, it must start `ksk_live_`.
-- `402 insufficient credits`: top up or wait for the monthly free refresh.
+- `402 insufficient credits`: the wallet is empty. Buy a credit pack or a plan in the dashboard.
 - Node 18+ is required for `npx`; the package has zero runtime dependencies beyond the MCP SDK.
