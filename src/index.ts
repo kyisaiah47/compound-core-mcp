@@ -92,7 +92,7 @@ const parserail = new ParseRailCore({
   baseUrl: process.env.PARSERAIL_BASE_URL || process.env.KYNTH_BASE_URL || undefined,
 });
 
-const server = new McpServer({ name: "parserail-mcp", version: "0.5.7" });
+const server = new McpServer({ name: "parserail-mcp", version: "0.5.8" });
 
 /** Wrap an SDK call so any ParseRailError becomes a clean MCP tool error. */
 async function run<T>(fn: () => Promise<T>) {
