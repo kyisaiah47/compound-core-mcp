@@ -4,7 +4,7 @@ An [MCP](https://modelcontextprotocol.io) server for **[ParseRail](https://parse
 
 ## Setup
 
-Get a key at **[parserail.thecompound.tech](https://parserail.thecompound.tech)**, then add the server to your MCP client config. There is no free tier. Credits are bought up front, a $20 pack or a plan from $19/mo, and a call is charged only when it succeeds.
+Get a key at **[parserail.thecompound.tech](https://parserail.thecompound.tech)**. Add the server to your MCP client config. ParseRail has no free tier. Buy credits up front through a $20 pack or a plan from $19/mo. ParseRail charges a call only when it succeeds.
 
 **Claude Code:**
 
@@ -45,6 +45,6 @@ Documents can be passed as `fileUrl`, raw `text`, or `fileBase64` + `fileMimeTyp
 
 ## Pricing
 
-Pay-per-call credits, no subscription required, you're only charged on a successful call. See [parserail.thecompound.tech/docs](https://parserail.thecompound.tech/docs).
+You pay with pay-per-call credits. You do not need a subscription. ParseRail charges you only when a call succeeds. See [parserail.thecompound.tech/docs](https://parserail.thecompound.tech/docs).
 
 MIT, Compound Labs

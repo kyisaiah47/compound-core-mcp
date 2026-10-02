@@ -20,7 +20,7 @@
       "environmentVariables": [
         {
           "name": "PARSERAIL_API_KEY",
-          "description": "Your ParseRail API key (ksk_live_…), from parserail.thecompound.tech/dashboard. Calls spend prepaid credits. There is no free tier.",
+          "description": "Get your ParseRail API key (ksk_live_…) from parserail.thecompound.tech/dashboard. Calls spend prepaid credits. ParseRail has no free tier.",
           "isRequired": true,
           "isSecret": true
         }
