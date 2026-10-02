@@ -45,6 +45,6 @@ Documents can be passed as `fileUrl`, raw `text`, or `fileBase64` + `fileMimeTyp
 
 ## Pricing
 
-Pay-per-call credits, no subscription, you're only charged on a successful call. See [parserail.thecompound.tech/docs](https://parserail.thecompound.tech/docs).
+Pay-per-call credits, no subscription required, you're only charged on a successful call. See [parserail.thecompound.tech/docs](https://parserail.thecompound.tech/docs).
 
 MIT, Compound Labs
