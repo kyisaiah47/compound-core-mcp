@@ -1,7 +1,7 @@
 {
   "name": "parserail-mcp",
   "version": "0.5.8",
-  "description": "MCP server for ParseRail, gives Claude, Cursor, and any MCP client native tools to parse documents, extract fields, redact PII, analyze contracts, fight chargebacks, and enrich companies.",
+  "description": "ParseRail is an MCP server that gives Claude, Cursor, and any MCP client native tools to parse documents, extract fields, redact PII, analyze contracts, fight chargebacks, and enrich companies.",
   "keywords": [
     "mcp",
     "model-context-protocol",
